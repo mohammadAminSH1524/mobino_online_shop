@@ -7,6 +7,8 @@ text.txt
 /.pnp
 .pnp.js
 
+*.woff
+
 # testing
 /coverage
 
