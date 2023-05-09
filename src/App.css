@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+@font-face {
+  font-family: nan;
+  src: url(../assessts/Far_Nazanin/Far_Nazanin.ttf);
+}
+@font-face {
+  font-family: iransanc;
+  src: url(../assessts/A-Iranian-Sans/A-Iranian-Sans/Iranian\ Sans.ttf);
+}
+@font-face {
+  font-family: yekan;
+  src: url(../assessts/BYekan-/BYekan/BYekan+.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 100;
+  src: url("woff/IRANYekanX-Thin.woff") format("woff"),
+    url("woff2/IRANYekanX-Thin.woff2") format("woff2");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 200;
+  src: url("woff/IRANYekanX-UltraLight.woff") format("woff"),
+    url("woff2/IRANYekanX-UltraLight.woff2") format("woff2");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 300;
+  src: url("woff/IRANYekanX-Light.woff") format("woff"),
+    url("woff2/IRANYekanX-Light.woff2") format("woff2");
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 500;
+  src: url("woff/IRANYekanX-Medium.woff") format("woff"),
+    url("woff2/IRANYekanX-Medium.woff2") format("woff2");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 600;
+  src: url("woff/IRANYekanX-DemiBold.woff") format("woff"),
+    url("woff2/IRANYekanX-DemiBold.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 800;
+  src: url("woff/IRANYekanX-ExtraBold.woff") format("woff"),
+    url("woff2/IRANYekanX-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 900;
+  src: url("woff/IRANYekanX-Black.woff") format("woff"),
+    url("woff2/IRANYekanX-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 950;
+  src: url("woff/IRANYekanX-ExtraBlack.woff") format("woff"),
+    url("woff2/IRANYekanX-ExtraBlack.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: 1000;
+  src: url("woff/IRANYekanX-Heavy.woff") format("woff"),
+    url("woff2/IRANYekanX-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: bold;
+  src: url("woff/IRANYekanX-Bold.woff") format("woff"),
+    url("woff2/IRANYekanX-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANYekanX;
+  font-style: normal;
+  font-weight: normal;
+  src: url("woff/IRANYekanX-Regular.woff") format("woff"),
+    url("woff2/IRANYekanX-Regular.woff2") format("woff2");
+}
+
+.gradient-for-text {
+  background: linear-gradient(90deg, #1a2980, #26d0ce);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-for-text-1 {
+  background: linear-gradient(90deg, #72ace9, #5558b6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+

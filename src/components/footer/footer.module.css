@@ -1,0 +1,230 @@
+
+
+.container {
+  width: 100%;
+  background-color: var(--main-background-color);
+  padding-bottom: 20px;
+}
+
+.containerControll {
+  display: flex;
+  flex-direction: column;
+  max-width: 1620px;
+  /* width: 90%; */
+  margin: 0 auto;
+}
+
+.containerControll > div {
+  border-bottom: 1px solid var(--border-color-primary);
+}
+
+.logosContainer {
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  gap: 20px;
+}
+
+.logoContainer {
+  width: 25%;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.logoContainer > span {
+  font-size: 14px;
+  color: #808080;
+  
+}
+
+/* ? */
+
+.footerLinesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.footerLines {
+  display: flex;
+  justify-content: space-between;
+  width: 54%;
+}
+
+.footerLine {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  width: 33.33%;
+}
+
+.footerLineTitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 26px;
+}
+
+.footerLine > ul > li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #666b70;
+  cursor: pointer;
+}
+
+
+.beWithUsContainer {
+  width: 44%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.socialMediaLogosContainer {
+  padding-left: 15px;
+}
+
+.socialMediaLogo {
+  margin: 0 3px;
+  font-size: 20px;
+  color: #3e3e3e;
+  cursor: pointer;
+}
+.phoneNumberContainer {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px 15px 0;
+  font-size: 18px;
+}
+
+.phoneNumber {
+  margin-left: 8px;
+}
+
+.dash {
+  margin: 0 2px;
+}
+
+.sourseContainer {
+  padding: 20px 15px 20px 0;
+  border: none !important;
+  font-size: 14px;
+}
+
+/*  */
+
+.alterdFooterLinesContainer {
+  display: none;
+  flex-direction: column;
+}
+
+.customerHelpContainer > div {
+  padding: 10px 15px 20px 15px;
+  border-bottom: 1px solid var(--border-color-primary);
+  margin-bottom: 10px;
+}
+
+.customerHelpContainer > div > button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.customerHelpContainer > div > button > h4 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.customerHelpContainer > div > button > span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.customerHelpContainer > div > ul {
+  margin-top: 20px;
+}
+
+.customerHelpContainer > div > ul > li {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #666b70;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.alterdFooterLinesContainer > .beWithUsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 15px;
+  margin-top: 30px;
+}
+
+@media (max-width: 1620px) {
+  .containerControll {
+    max-width: 1260px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .containerControll {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .containerControll {
+    max-width: 960px;
+  }
+
+  .footerLines {
+    width: 75%;
+  }
+  .footerLine > ul > li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .containerControll {
+    max-width: 750px;
+  }
+  .logosContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logoContainer {
+    width: 100%;
+  }
+
+  .footerLinesContainer {
+    display: none;
+  }
+  .alterdFooterLinesContainer {
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .containerControll {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 490px) {
+  .logosContainer {
+    gap: 10px;
+  }
+  .logoContainer {
+    flex-direction: column;
+  }
+}

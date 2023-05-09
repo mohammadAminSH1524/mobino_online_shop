@@ -1,0 +1,27 @@
+.container {
+  padding: 2rem;
+  font-size: 40px;
+}
+
+.container > div {
+  margin-bottom: 20px;
+}
+
+.TestContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.Btn {
+
+
+  padding: 8px 14px 6px 14px;
+  background-color: var(--primaryColor);
+  color:var(--white);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  font-size: 20px;
+}

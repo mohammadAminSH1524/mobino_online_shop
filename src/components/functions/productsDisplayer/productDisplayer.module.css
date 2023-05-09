@@ -1,0 +1,176 @@
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+  background-color: var(--white);
+  padding: 20px;
+  width: calc(20% - 2px);
+  min-height: 350px;
+  position: relative;
+}
+
+.product:hover {
+  box-shadow: 0 0 16px 0 rgb(0 0 0 / 20%);
+  z-index: 2;
+}
+
+.product:hover > .productPriceContainer {
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+
+.product:hover > .productPriceContainerWITHOff {
+  background-color: var(--primaryColor);
+  color: var(--white);
+  transition: all 0.5s ease-out;
+}
+
+.discountText {
+  font-size: 12px;
+  width: 100%;
+  color: var(--primaryColor);
+  font-weight: 700;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.productColor {
+  position: absolute;
+  top: 50px;
+  left: 36px;
+
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+
+  outline: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+.productImage {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 160px;
+}
+
+.productTitle {
+  text-align: center;
+  color: #444;
+  margin-bottom: 5px;
+
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+  min-height: 55px;
+  padding: 0 10px;
+}
+
+.productPriceContainer {
+  padding: 8px 14px 6px 14px;
+  background-color: #eee;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tomanText {
+  margin-right: 6px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.priceText {
+  font-size: 18px;
+}
+
+.discountPersentageContainer {
+  position: absolute;
+  top: -12px;
+  left: -22px;
+  z-index: 2;
+  color: var(--primaryColor);
+  background-color: var(--white);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 14%), 0 2px 4px rgb(0 0 0 / 30%);
+  height: 30px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.productPriceContainerWITHOff {
+  padding: 8px 14px 6px 14px;
+  background-color: var(--primaryColor);
+  color: var(--white);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.percentageIcon {
+  font-size: 14px;
+}
+.percentageNumber {
+  font-size: 14px;
+}
+
+.offPriceContainer {
+  position: relative;
+  color: #ababab;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.offPriceText {
+  font-size: 12px;
+}
+
+.offPriceContainer > .tomanText {
+  font-size: 12px;
+  margin: 0;
+}
+
+.cross {
+  position: absolute;
+  top: 6px;
+  width: 42%;
+  z-index: 2;
+  height: 1px;
+  background-color: #ababab;
+}
+
+/* ?media query */
+
+@media (max-width: 1620px) {
+  .product {
+    width: calc(25% - 1.6px);
+  }
+}
+
+@media (max-width: 1400px) {
+  .product {
+    width: calc(33.3333333333% - 1.6px);
+  }
+}
+
+@media (max-width: 800px) {
+  .product {
+    width: calc(50% - 1.6px);
+  }
+}
+
+@media (max-width: 540px) {
+  .product {
+    width: calc(100% - 1.6px);
+  }
+  .cross {
+    width: 85px;
+  }
+}

@@ -1,0 +1,361 @@
+.container {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.14), 0 2px 0 rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--border-color-primary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: var(--white);
+}
+
+/* ?_______ */
+
+.containerControll {
+  max-width: 1620px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--primaryColor);
+  font-size: 40px;
+  padding-right: 16px;
+  padding-top: 10px;
+  margin-left: 14px;
+  padding-bottom: 4px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logoAndSearchbarContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.searchBoxContainer {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  display: none;
+}
+
+.searchInput {
+  background-color: var(--border-color-secondary);
+  width: 100%;
+  padding-top: 11px;
+  padding-right: 45px;
+  padding-bottom: 11px;
+  padding-left: 50px;
+  /* padding: 11px 45px 11px 50px; */
+  font-size: 14px;
+  font-weight: 400;
+
+  border: 1px solid var(--border-color-secondary);
+  color: #9e9fb1;
+  outline: none;
+  border-radius: 12px;
+}
+.searchBtn {
+  cursor: pointer;
+  font-size: 20px;
+  border: 0;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  outline: none;
+  width: 32px;
+  background-color: transparent;
+  color: #9e9fb1;
+  height: 100%;
+}
+
+.btnsContainer {
+  width: 320px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profileContainer {
+  color: #676767;
+  padding-left: 20px;
+  margin-right: 10px;
+
+  border-left: 1px solid var(--border-color-primary);
+  display: flex;
+
+  align-items: center;
+}
+
+.cartContainer {
+  color: #505050;
+  padding-right: 20px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+.profileLogo,
+.cartLogo {
+  display: inline-block;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  color: var(--white);
+}
+.profileLogo {
+  margin-right: 4px;
+}
+
+.cartLogo {
+  position: relative;
+}
+.cartCount {
+  background-color: var(--primaryColor);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 15px;
+  right: -9px;
+  bottom: -9px;
+  min-width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color-white);
+  border-radius: 6px;
+}
+.profileText,
+.cartText {
+  letter-spacing: 0.1px;
+  line-height: 10px;
+  font-size: 16px;
+}
+.profileText {
+  font-weight: 300;
+  line-height: 2;
+  color: #515050;
+}
+.cartText {
+  font-weight: 500;
+}
+
+.nav {
+  position: static;
+}
+
+/* ? alterdContainerControll */
+
+.alterdContainerControll {
+  display: none;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin-inline: auto;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.menuAndLogo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menuLogo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.alterdTitle {
+  color: var(--primaryColor);
+  font-size: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.alterdContainerControll > .btnsContainer {
+  padding-top: 10px;
+  justify-content: flex-end;
+}
+
+/* ?media query */
+
+@media (max-width: 1620px) {
+  .containerControll {
+    max-width: 1260px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    position: static;
+  }
+  .containerControll {
+    display: none;
+  }
+  .alterdContainerControll {
+    display: flex;
+  }
+}
+
+@media (max-width: 1200px) {
+  .alterdContainerControll {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .alterdContainerControll {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 800px) {
+  .alterdContainerControll {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container > div {
+    padding-inline: 12px;
+  }
+}
+@media (max-width: 350px) {
+  .profileText {
+    display: none;
+  }
+}
+
+/* ?modal */
+
+.modalContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 19;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /* display: none; */
+}
+
+.menuContainer {
+  background-color: var(--white);
+  height: 100%;
+  max-width: 300px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all ease 0.5s;
+  width: 100%;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+}
+
+.modalBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-color-secondary);
+}
+
+.modalBtns > h4 > a {
+  font-size: 30px;
+  color: var(--primaryColor);
+}
+.modalBtns > button {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  background-color: var(--primaryColor);
+  border-radius: 50px;
+}
+
+.modalNavigation > ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.modalNavigation > ul > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block: 15px;
+}
+
+.modalNavigationLogo {
+  color: #9e9fb1;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+
+.modalNavigationText {
+  color: #3f4064;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.modalNavigation > ul > a:nth-child(1) > .modalNavigationLogo {
+  color: red;
+}
+.modalNavigation > ul > a:nth-child(2) > .modalNavigationLogo {
+  color: #19bfd3;
+}
+.modalNavigation > ul > a:nth-child(3) > .modalNavigationLogo {
+  /* color: black;*/
+  color: silver;
+}
+.modalNavigation > ul > a:nth-child(4) > .modalNavigationLogo {
+  color: #034c9d;
+  border: 2px solid #034c9d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.modalNavigation > ul > a:nth-child(5) > .modalNavigationLogo {
+  color: #f76400;
+}
+.modalNavigation > ul > a:nth-child(6) > .modalNavigationLogo {
+  color: #ed1651;
+}

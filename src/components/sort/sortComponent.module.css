@@ -1,0 +1,75 @@
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-background-color);
+  margin-bottom: 20px;
+}
+
+.navFilterContainer {
+  display: flex;
+  padding: 10px;
+}
+
+.navFilterContainer > div {
+  display: flex;
+}
+
+.navFilterContainer > div > button,
+.container > span {
+  
+  color: #767790;
+}
+
+.navFilterContainer > div > button {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 12px;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+.navFilterContainer > div > button:hover {
+  color: var(--primaryColor);
+}
+
+.container > span {
+  font-size: 12px;
+  font-weight: 400;
+ 
+}
+
+.sortingText {
+  color: var(--filter-component-primary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.sortingLogo {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    justify-content: center;
+  }
+
+  .navFilterContainer > div {
+    flex-wrap: wrap;
+  }
+  .navFilterContainer > div > button,
+  .navFilterContainer > div > div {
+    margin-bottom: 5px;
+  }
+
+  .container > span {
+    display: none;
+  }
+}

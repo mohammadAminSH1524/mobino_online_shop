@@ -1,0 +1,59 @@
+ ,{
+      "id": ,
+
+      "menuImage": "",
+      "address": "",
+      "image": "",
+     
+      "color": "",
+      "price": ,
+      "offPrice": ,
+      "quantity": ,
+      "avgRate": ,
+      "numberOfPoints": ,
+
+      "title": "",
+      "dividedTitle": {
+        "phoneBrand": "",
+        "phoneModel": "",
+        "SIMCartCount": "",
+        "phoneCapacity": {
+          "numericalPart": ,
+          "letterSection": "گیگابایت"
+        }
+      },
+
+
+
+      "Attributes": {
+        "ScreenTechnology": "",
+        "size": ,
+        "PhotoResolution": {
+          "numericalPart": ,
+          "letterSection": "مگاپیکسل"
+        },
+        "OperatingSystemVersion": "",
+        "IncludedItems": ""
+      },
+
+      "shortenedIntroduction": "",
+      "Introduction": "",
+
+      "specifications": {
+        "Dimensions": "",
+        "Weight": {
+          "numericalPart": ,
+          "letterSection": "گرم"
+        },
+        
+        "ScreenSizeRange": {
+          "numericalPart": ,
+          "letterSection": "اینچ و بزرگتر"
+        }
+      },
+
+    
+
+      "type": "",
+      "brand": ""
+    }

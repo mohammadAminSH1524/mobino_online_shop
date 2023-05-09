@@ -1,0 +1,13 @@
+.notAvailable {
+  color: #a1a3a8;
+}
+
+.available {
+  color: #62666d;
+}
+
+.lowAvailabality {
+  color: var(--primaryColor);
+}
+
+

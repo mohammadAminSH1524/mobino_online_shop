@@ -1,0 +1,177 @@
+.container {
+  width: 100%;
+  position: relative;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 48px;
+}
+
+.containerControll {
+  width: 100%;
+  max-width: 1620px;
+}
+
+.routeAddress {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.routeAddress > span,
+.routeAddress > a {
+  font-size: 12px;
+  color: #b2b2b2;
+  cursor: pointer;
+}
+.routeAddress > span:nth-child(2n + 2) {
+  margin: 0 10px;
+}
+
+.productsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filtersContainerParent {
+  width: 24%;
+  margin-left: 2%;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.filtersContainerParent > div > section {
+  display: none;
+}
+
+.asideImages > img {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.products {
+  width: 74%;
+
+  padding: 0 12px;
+  background-color: var(--main-background-color);
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+/* ?media query */
+
+@media (max-width: 1620px) {
+  .containerControll {
+    max-width: 1260px;
+  }
+
+  .filtersContainerParent {
+    width: 23%;
+    margin-left: 1%;
+  }
+  .products {
+    width: 76%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .containerControll {
+    max-width: 1140px;
+  }
+
+  .filtersContainerParent {
+    width: 23%;
+    margin-left: 1%;
+  }
+  .products {
+    width: 76%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .containerControll {
+    max-width: 960px;
+  }
+
+  .filtersContainerParent {
+    width: 27%;
+    margin-left: 1%;
+  }
+  .products {
+    width: 72%;
+  }
+
+  .routeAddress > span,
+  .routeAddress > a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .containerControll {
+    max-width: 750px;
+  }
+
+  .asideImages {
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .asideImages > img {
+    width: 50%;
+  }
+
+  .productsContainer {
+    flex-direction: column;
+  }
+  .filtersContainerParent {
+    width: 100%;
+  }
+
+  .products {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .containerControll {
+    max-width: 540px;
+  }
+
+  .asideImages {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+
+  .asideImages > img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .containerControll > section {
+    padding-inline: 12px;
+  }
+  .product {
+    width: calc(100% - 1.6px);
+  }
+  .cross {
+    width: 85px;
+  }
+  .asideImages {
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+.ImageSliderContainer {
+  position: relative;
+  
+  height: 100%;
+}
+
+
+.logosContainer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 42px;
+  right: 40px;
+}
+
+.logosContainer > button {
+  font-size: 16px;
+  outline: none;
+  border: none;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.sliderDotsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  color: #939393;
+}
+
+.sliderDotsContainer > div > span {
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.unSelectedDot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #939393;
+}
+
+.selectedDot {
+  display: inline-block;
+  width: 20px;
+  height: 6px;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+

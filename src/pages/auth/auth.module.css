@@ -1,0 +1,319 @@
+:root {
+  --primary: #fff;
+  --secondary: #ed1651;
+  --textColor: #3f4064;
+  --secondaryTextColor: #161853;
+}
+/* :root {
+  --primary: #03c988;
+  --secondary: #fff;
+  --textColor: #3f4064;
+  --secondaryTextColor: #13005a;
+} */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  position: relative;
+
+  scroll-behavior: smooth;
+
+  display: flex;
+  gap: 100px;
+}
+
+.backgroundColors {
+  position: fixed;
+  width: 100vw;
+  max-height: 100%;
+  height: 100vh;
+  max-height: 100%;
+  background-color: var(--secondary);
+  display: flex;
+}
+
+.whiteContainer {
+  width: 30%;
+  height: 100%;
+  background-color: var(--secondary);
+}
+.coloredContainer {
+  width: 70%;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 0 40px 40px 0;
+}
+
+.containerControll {
+  position: relative;
+  z-index: 2;
+  right: calc(30% - 195px);
+  top: 26%;
+  background-color: var(--white);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 14%), 0 2px 4px rgb(0 0 0 / 30%);
+  border-radius: 20px;
+  width: 390px;
+  height: 400px;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mobino {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 2;
+  margin-bottom: 18px;
+  color: var(--secondaryTextColor);
+}
+
+.loginSignupText {
+  color: var(--secondaryTextColor);
+  font-weight: 600;
+  line-height: 2;
+  margin-bottom: 16px;
+}
+
+.helloText {
+  margin-bottom: 8px;
+  color: var(--textColor);
+  font-size: 14px;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.inputLable {
+  color: var(--textColor);
+  font-size: 14px;
+}
+
+.authForm > input {
+  padding: 14px 16px;
+  margin-top: 16px;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  outline: 2px solid transparent;
+  text-align: left;
+  font-size: 16px;
+  border: 1px solid #f3f4f6;
+}
+
+.authForm > input:hover,
+.authForm > input:focus {
+  border: 1px solid #00337c;
+  background-color: var(--white);
+}
+
+.authForm > button {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--white);
+
+  background-color: #00337c;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 14%), 0 2px 4px rgb(0 0 0 / 30%);
+}
+
+.formErrorContainer {
+  position: absolute;
+  bottom: 84px;
+  right: 3px;
+  color: var(--secondary);
+  font-size: 10px;
+}
+
+.asideInfo {
+  position: relative;
+  z-index: 2;
+  right: 30%;
+  top: 22%;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 20px;
+  width: 390px;
+  height: 500px;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.asideInfoHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.asideInfoHeader > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.asideInfoHeader > section > div:first-child {
+  padding-top: 1px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--secondary);
+  color: var(--white);
+  font-size: 13px;
+}
+
+.asideInfoHeader > section:first-child > div:first-child {
+  background-color: var(--white);
+
+  color: var(--secondary);
+
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.asideInfoHeader > section > div:last-child {
+  font-size: 14px;
+  color: var(--secondaryTextColor);
+}
+.asideInfoHeader > section:first-child > div:last-child {
+  color: var(--white);
+  font-size: 14px;
+  color: var(--secondaryTextColor);
+}
+
+.firstCross {
+  position: absolute;
+  top: 12px;
+  right: 50px;
+  width: 93px;
+  height: 1px;
+  background-color: var(--secondary);
+}
+
+.secondCross {
+  position: absolute;
+  top: 12px;
+  left: 52px;
+  width: 97px;
+  height: 1px;
+  background-color: var(--secondary);
+}
+
+.animationContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 25px;
+}
+
+.asideInfoFooter {
+  position: relative;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.asideInfoFooter > p {
+  color: var(--white);
+  color: var(--textColor);
+  width: 78%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.asideInfoFooter > p > span {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.asideInfoFooter > a {
+  color: var(--primary);
+  font-size: 14px;
+  padding: 12px 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+  border-radius: 16px;
+  background-color: var(--secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .asideInfo {
+    right: 24%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .asideInfo {
+    right: 20%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+  }
+
+  .containerControll {
+    position: static;
+    box-shadow: none;
+    border: 1px solid #f3f4f6;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 14%), 0 2px 4px rgb(0 0 0 / 30%);
+  }
+
+  .mobino {
+    color: var(--secondary);
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .loginSignupText {
+    color: var(--secondary);
+  }
+
+  .authForm > input:hover,
+  .authForm > input:focus {
+    border: 1px solid var(--secondary);
+  }
+
+  .authForm > button {
+    background-color: var(--secondary);
+  }
+
+  .backgroundColors {
+    display: none;
+  }
+
+  .asideInfo {
+    display: none;
+  }
+}
+
+@media (max-width: 490px) {
+}

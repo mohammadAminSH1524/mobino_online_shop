@@ -1,0 +1,146 @@
+
+
+.navigationContainer {
+  max-width: 1620px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation > ul {
+  display: flex;
+}
+
+.navigation > ul > li > a,
+.specialSells {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 13px 14px 6px 14px;
+  color: #555;
+}
+
+.navigation > ul > li:first-child {
+  position: relative;
+}
+
+.navigation > ul > li:first-child > a {
+  padding-right: 0;
+}
+
+.navigation > ul > li:first-child > a::after {
+  content: "|";
+  color: #d7d7d7;
+  font-size: 0.86rem;
+  position: absolute;
+  left: 1px;
+  top: 3px;
+}
+
+.specialSells > a {
+  display: flex;
+}
+
+.specialSellsLogo {
+  
+  background-color: var(--primaryColor);
+  color: white;
+  font-size: 25px;
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primaryColor);
+}
+
+.specialSellsText {
+  color: #555;
+}
+
+/* ? alterd  Nav */
+
+.alterdNavigationContainer {
+  display: none;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  max-width: 1140px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.searchBoxContainer {
+  width: 100%;
+
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.searchInput {
+  background-color: var(--border-color-secondary);
+  width: 100%;
+  padding: 11px;
+  /* padding: 11px 45px 11px 50px; */
+  font-size: 14px;
+  font-weight: 400;
+
+  border: 1px solid var(--border-color-secondary);
+  color: #9e9fb1;
+  outline: none;
+  border-radius: 12px;
+}
+.searchBtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: 0;
+  position: absolute;
+  left: 8px;
+  top: 0;
+  outline: none;
+  width: 32px;
+  background-color: transparent;
+  color: #9e9fb1;
+  height: 100%;
+}
+
+/* ?media query */
+
+@media (max-width: 1620px) {
+  .navigationContainer {
+    max-width: 1260px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navigationContainer {
+    display: none;
+  }
+
+  .alterdNavigationContainer {
+    display: block;
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .alterdNavigationContainer {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .alterdNavigationContainer {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 800px) {
+  .alterdNavigationContainer {
+    max-width: 540px;
+  }
+}
