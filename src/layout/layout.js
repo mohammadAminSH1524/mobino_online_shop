@@ -30,7 +30,7 @@ const Layout = () => {
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/products/:product" element={<SingleProduct />} />
           <Route path="/apple-products" element={<ApplePage />} />
-          <Route path="/samsung-products" element={<SamsungPage />} />
+          <Route path="/samsung-products" element={<SamsungPage />} />      
           <Route path="/xiaomi-products" element={<XiaomiPage />} />
           <Route path="*" element={<NotfoundPage />} />
         </Routes>
