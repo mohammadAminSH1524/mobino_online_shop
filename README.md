@@ -6,13 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Mobino is a mobile online store developed with react
 I have tried my best to show the best work I can
-In this project, redux is used for state management
-,react router dom is used for server side routing witch It
+In this project, `redux` is used for state management
+,`react router dom` is used for server side routing witch It
 enables the creation of single-page web or mobile apps that
 allow navigating without refreshing the page. It also allows
 us to use browser history features while preserving the right application view.
-i have used formik library to simplify the procces of making forms and ,
-i have used react-icons library to use icons witch it delivers
+i have used `formik` library to simplify the procces of making forms and ,
+i have used `react-icons` library to use icons witch it delivers
 the icons to your app as components so they're easier to work
 with, and it lets you style them so they're consistent with
 the overall style of your app.
