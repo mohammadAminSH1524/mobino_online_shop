@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import styles from "./layout.module.css";
 import HomePage from "../pages/home/homePage";
 import CartPage from "../pages/cart/cartPage";
-import CommonQuestions from "../pages/commonQuestions/commonQuestions";
 import ProductsPage from "../pages/products/productsPage";
 import NotfoundPage from "../pages/notFound/notFound";
 import Header from "../components/header/header";
@@ -23,7 +22,7 @@ const Layout = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/cart" element={<CartPage />} />
-          <Route path="/commonQuestions" element={<CommonQuestions />} />
+          
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/incredible-offers" element={<IncredibleOffers />} />
