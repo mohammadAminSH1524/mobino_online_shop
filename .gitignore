@@ -2,6 +2,7 @@
 
 # dependencies
 src/Webfonts/
+/text
 /node_modules
 /.pnp
 .pnp.js
