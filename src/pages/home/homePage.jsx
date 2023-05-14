@@ -100,12 +100,12 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className={styles.watchAllContainer}>
+            <Link to="/products" className={styles.watchAllContainer}>
               <span className={styles.watchAllText}>مشاهده</span>
               <span className={styles.watchAllLogo}>
                 <IoIosArrowBack />
               </span>
-            </div>
+            </Link>
           </div>
           {/* popular  filter is : avgRate */}
           <div className={styles.popularProductsContainer}>
@@ -127,12 +127,12 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className={styles.watchAllContainer}>
+            <Link to="/products" className={styles.watchAllContainer}>
               <span className={styles.watchAllText}>مشاهده</span>
               <span className={styles.watchAllLogo}>
                 <IoIosArrowBack />
               </span>
-            </div>
+            </Link>
           </div>
           {/* */}
         </div>
@@ -178,7 +178,7 @@ const HomePage = () => {
             </div>
           </div>
           <span>
-            <Link to="">مشاهده همه</Link>
+            <Link to="/products">مشاهده همه</Link>
           </span>
         </div>
       </section>

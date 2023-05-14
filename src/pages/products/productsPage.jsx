@@ -1,6 +1,6 @@
 import styles from "./productsPage.module.css";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { productsDisplayer } from "../../components/functions/productsDisplayer/productsDisplayer";
@@ -15,6 +15,9 @@ const ProductsPage = () => {
   const { products } = useSelector((state) => state.sort);
 
   const dispatch = useDispatch();
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     dispatch(getAsyncProducts());

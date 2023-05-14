@@ -25,7 +25,7 @@
   flex-direction: column;
 
   align-items: center;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   padding-bottom: 100px;
 }
 
@@ -55,12 +55,17 @@
 }
 
 .emptyCartText {
+  min-height: 1px;
+  width: 40%;
+  width: 450px;
+  
   font-size: 40px;
   font-weight: 800;
   color: #363636;
   padding-bottom: 34px;
   padding-top: 17px;
   border-bottom: 3px dashed #eaeaea;
+  padding: 0;
 }
 
 .orderButton {
@@ -511,6 +516,10 @@
 @media (max-width: 600px) {
   .containerControll {
     padding-inline: 12px;
+  }
+
+  .emptyCartText{
+    width: 300px;
   }
 
   .warehouseStatusContainer {

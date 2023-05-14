@@ -9,14 +9,12 @@ import {
 import { useEffect, useLayoutEffect } from "react";
 import {
   NumberOfGoods,
-  betterTitle,
   cartDiscountChecker,
   cartWarehouseStatusChecker,
   discountAmountStatusChecker,
   discountChecker,
   parchaseProfit,
   persianConverter,
-  warehouseStatusChecker,
 } from "../../components/functions/functions";
 import { TbShoppingCart } from "react-icons/tb";
 import { HiFaceFrown } from "react-icons/hi2";
@@ -27,6 +25,10 @@ import { Link } from "react-router-dom";
 import { FcShop } from "react-icons/fc";
 import { MdOutlineEventAvailable } from "react-icons/md";
 import { toast } from "react-toastify";
+
+import Lottie from "lottie-react";
+import emptyCart from "../../lotties/empty-cart.json";
+
 const CartPage = () => {
   const { products, cart, commodityPrices, totalShoppingCart } = useSelector(
     (state) => state.sort
@@ -54,30 +56,22 @@ const CartPage = () => {
             </div>
             <div className={styles.cross}></div>
 
-            <button
-              onClick={() => dispatch(addToCart(1))}
-              className={styles.test}
-            >
-              add1
-            </button>
-            <button
-              onClick={() => dispatch(addToCart(2))}
-              className={styles.test1}
-            >
-              add2
-            </button>
+           
+
           </section>
 
           <section className={styles.emptyCartContainer}>
             <div className={styles.logosContainer}>
-              <div className={styles.emptyCartLogo}>
+              {/* <div className={styles.emptyCartLogo}>
                 <TbShoppingCart />
               </div>
               <div className={styles.sadFaceLogo}>
                 <HiFaceFrown />
-              </div>
+              </div> */}
+              <Lottie animationData={emptyCart}/>
             </div>
-            <div className={styles.emptyCartText}>سبد خرید شما خالیه !</div>
+            {/* <div className={styles.emptyCartText}>سبد خرید شما خالیه !</div> */}
+            <div className={styles.emptyCartText}></div>
             <Link to="/products" className={styles.orderButton}>
               <span className={styles.orderButtonText}>ثبت اولین سفارش </span>
               <span className={styles.orderButtonLogo}>
