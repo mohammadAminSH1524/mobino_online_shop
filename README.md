@@ -21,17 +21,21 @@ the overall style of your app.
 
 In the project directory, you can run:
 
-### `npm run server`
-
-cd to sever and then run `npm run server` to load data.json
-
-### `npm start`
+### `npm run nodeStart`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run nodeStart`
+
+or you can see this project online by clicking this link [https://mobino.iran.liara.run/](https://mobino.iran.liara.run/)
+
+### `node.js database`
+
+Open [https://database.iran.liara.run/products](https://database.iran.liara.run/products) to view it in your browser.
 
 ## Learn More
 

@@ -47,18 +47,8 @@ const CartPage = () => {
     return (
       <div className={styles.container}>
         <div className={styles.emptyCartContainerControll}>
-          <section className={styles.cartHeader}>
-            <div>
-              <span className={styles.cartHeaderText}>سبد خرید</span>
-              <span className={styles.cartHeaderLogo}>
-                {persianConverter(cart.length)}
-              </span>
-            </div>
-            <div className={styles.cross}></div>
 
-           
-
-          </section>
+          
 
           <section className={styles.emptyCartContainer}>
             <div className={styles.logosContainer}>
@@ -356,7 +346,7 @@ const CartPage = () => {
               </div>
             )}
 
-            <Link to="/login" className={styles.orderBtn}>
+            <Link to="/auth" className={styles.orderBtn}>
               ثبت سفارش
             </Link>
           </div>

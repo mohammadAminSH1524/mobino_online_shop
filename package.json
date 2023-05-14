@@ -33,8 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "cd server && npm run server",
-    "nodeStart": "concurrently \"npm run server\" \"react-scripts start\"",
-    "deployLiara": "concurrently  \"liara deploy\" \"cd server && npm run server\""
+    "nodeStart": "concurrently \"npm run server\" \"react-scripts start\"" 
   },
   "eslintConfig": {
     "extends": [

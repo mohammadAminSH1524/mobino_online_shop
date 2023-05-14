@@ -18,6 +18,7 @@ const Header = () => {
   const { cart } = useSelector((state) => state.sort);
   let path = useLocation().pathname.split("/")[1];
   
+  console.log(path);
 
   return (
     <header

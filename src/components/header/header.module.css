@@ -249,10 +249,14 @@
     padding-inline: 12px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 370px) {
+  .alterdTitle{
+    font-size: 35px;
+  }
   .profileText {
     display: none;
   }
+  
 }
 
 /* ?modal */
@@ -263,8 +267,6 @@
   height: 100vh;
   z-index: 19;
   background-color: rgba(0, 0, 0, 0.7);
-
-  /* display: none; */
 }
 
 .menuContainer {
