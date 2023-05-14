@@ -14,7 +14,7 @@ import {
 } from "../../features/sort/sort";
 
 const TestPage = () => {
-  const { value, error, loading, products, cart } = useSelector(
+  const { value,  loading, products, cart } = useSelector(
     (state) => state.sort
   );
   const dispatch = useDispatch();
@@ -23,10 +23,7 @@ const TestPage = () => {
   }, []);
 
   if (loading) return <div className={styles.container}>صبر کنید</div>;
-  if (error)
-    return (
-      <div className={styles.container}>گرفتن اطلاعات با مشکل مواجه شد</div>
-    );
+ 
 
   return (
     <div className={styles.container}>

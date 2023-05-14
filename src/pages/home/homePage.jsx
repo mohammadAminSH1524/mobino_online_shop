@@ -17,7 +17,6 @@ import {
 import { Link } from "react-router-dom";
 import { getAsyncProducts } from "../../features/sort/sort";
 
-
 const HomePage = () => {
   const [showFullDescription, setFullDescription] = useState(true);
   const [showFullFAQ1, setFullFAQ1] = useState(false);
@@ -47,7 +46,6 @@ const HomePage = () => {
 
     // ?______________________________________________
 
-    
     {
       url: "https://cdn.kalatik.com/media/0/23/02/19/1676795962689.jpg",
       id: 5,
@@ -60,7 +58,6 @@ const HomePage = () => {
       url: "https://cdn.kalatik.com/media/0/23/02/22/16770733154810.jpg",
       id: 7,
     },
-   
   ];
 
   const { products } = useSelector((state) => state.sort);
@@ -68,7 +65,6 @@ const HomePage = () => {
   const BestSellingProducts = bestsellingSortedProducts(products).slice(0, 12);
   const econemicProducts = sortedEconemicProducts(products).slice(0, 5);
   const popularProducts = sortedPopularProducts(products).slice(0, 5);
-
 
   const dispatch = useDispatch();
 

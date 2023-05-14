@@ -3,17 +3,37 @@ import axios from "axios";
 import _ from "lodash";
 import { brandProducts } from "../../components/functions/functions";
 import { toast } from "react-toastify";
-export const getAsyncProducts = createAsyncThunk(
-  "getAllProducts",
-  async (_, { rejectWithValue }) => {
-    try {
-      const response = await axios.get("http://localhost:3001/products");
-      return response.data;
-    } catch (error) {
-      return rejectWithValue([], error.message);
-    }
-  }
-);
+import { useState } from "react";
+import { json } from "react-router-dom";
+
+// export const getAsyncProducts = createAsyncThunk(
+//   "getAllProducts",
+//   async (_, { rejectWithValue }) => {
+//     try {
+//       const response = await axios.get("http://localhost:3001/products");
+//       return response.data;
+//     } catch (error) {
+//       return rejectWithValue([], error.message);
+//     }
+//   }
+// );
+
+export const getAsyncProducts = createAsyncThunk("getAllProducts",  () => {
+  return axios.get("https://database.iran.liara.run/products").then(Response => Response.data)
+});
+
+// export const getAsyncProducts = createAsyncThunk(
+//   "getAllProducts",
+//   async (_, { rejectWithValue }) => {
+//     try {
+//      await fetch("https://database.iran.liara.run/products")
+//         .then((res) => res.json())
+//         .then((json) => (p = json));
+//     } catch (error) {
+//       return rejectWithValue([], error.message);
+//     }
+//   }
+// );
 
 const initialState = {
   value: 10,
@@ -337,24 +357,28 @@ export const sortSlice = createSlice({
   },
 
   extraReducers: {
+    [getAsyncProducts.pending]: (state, action) => {
+      // return { ...state, products: [], loading: true, error: null };
+      // state.loading = true;
+    },
     [getAsyncProducts.fulfilled]: (state, action) => {
-      return {
-        ...state,
-        products: action.payload,
-        loading: false,
-        error: null,
-      };
+      // return {
+      //   ...state,
+      //   products: action.payload,
+      //   loading: false,
+      //   error: null,
+      // };
+      state.loading = false;
+      state.products = action.payload;
     },
     [getAsyncProducts.rejected]: (state, action) => {
-      return {
-        ...state,
-        products: [],
-        loading: false,
-        error: action.error,
-      };
-    },
-    [getAsyncProducts.pending]: (state, action) => {
-      return { ...state, products: [], loading: true, error: null };
+      // return {
+      //   ...state,
+      //   products: [],
+      //   loading: false,
+      //   error: action.error,
+      // };
+      state.loading = true;
     },
   },
 });

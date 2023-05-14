@@ -20,6 +20,8 @@ const ProductsPage = () => {
     dispatch(getAsyncProducts());
   }, []);
 
+  console.log(products);
+
   return (
     <div className={styles.container}>
       <div className={styles.containerControll}>

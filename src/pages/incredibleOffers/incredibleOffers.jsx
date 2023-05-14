@@ -12,7 +12,7 @@ import FilterComponet from "../../components/filter/filterComponent";
 import { getAsyncProducts } from "../../features/sort/sort";
 
 const IncredibleOffers = () => {
-  const { value, error, loading, products } = useSelector(
+  const { value, loading, products } = useSelector(
     (state) => state.sort
   );
 

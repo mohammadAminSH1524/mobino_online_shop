@@ -25,7 +25,7 @@ import {
 import { addToCart, getAsyncProducts } from "../../features/sort/sort";
 
 const SingleProduct = () => {
-  const { value, error, loading, products } = useSelector(
+  const { value,  loading, products } = useSelector(
     (state) => state.sort
   );
   const [showFullIntroduction, setFullIntroduction] = useState(true);
