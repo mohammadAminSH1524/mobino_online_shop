@@ -29,7 +29,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm run nodeStart`
+### `see Mobino online`
 
 or you can see this project online by clicking this link [https://mobino.iran.liara.run/](https://mobino.iran.liara.run/)
 
