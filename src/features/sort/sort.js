@@ -256,8 +256,6 @@ export const sortSlice = createSlice({
       const findedProduct = state.products.find(
         (product) => product.id === payloadId
       );
-
-      //  console.log(state.cart.length);
       if (index < 0) {
         toast("به سبد خرید اضافه شد", {
           position: "top-right",

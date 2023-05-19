@@ -1,6 +1,6 @@
 .ImageSliderContainer {
   position: relative;
-  
+  display: block;
   height: 100%;
 }
 

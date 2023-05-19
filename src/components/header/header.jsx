@@ -18,7 +18,7 @@ const Header = () => {
   const { cart } = useSelector((state) => state.sort);
   let path = useLocation().pathname.split("/")[1];
   
-  console.log(path);
+  
 
   return (
     <header
@@ -29,7 +29,7 @@ const Header = () => {
 
       <div className={styles.containerControll}>
         <div className={styles.logoAndSearchbarContainer}>
-          <Link to="test" className={styles.title}>
+          <Link to="" className={styles.title}>
             mobino
           </Link>
           <div
@@ -75,7 +75,7 @@ const Header = () => {
           >
             <BiMenu />
           </button>
-          <Link to="test" className={styles.alterdTitle}>
+          <Link to="" className={styles.alterdTitle}>
             موبینو
           </Link>
         </div>

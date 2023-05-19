@@ -27,19 +27,15 @@ const TestPage = () => {
 
   return (
     <div className={styles.container}>
-      <a href="">sssadasdas</a>
+     
       {products.map((product, index) => {
         return (
           <div className={styles.TestContainer} key={index}>
             <span>{product.id}:</span>
-            <span>{product.color}</span>
+            <div>{product.price}</div>
+            <span>{product.title}</span>
 
-            <button
-              onClick={() => dispatch(addToCart(product.id))}
-              className={styles.Btn}
-            >
-              test
-            </button>
+            
           </div>
         );
       })}

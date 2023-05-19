@@ -74,7 +74,7 @@ const CartPage = () => {
     );
   }
 
-  console.log(NumberOfGoods(cart));
+  // console.log(NumberOfGoods(cart));
 
   // console.log("commodityPrices", commodityPrices);
   // console.log("totalShoppingCart", totalShoppingCart);

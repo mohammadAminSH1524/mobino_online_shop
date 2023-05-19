@@ -24,7 +24,7 @@ const AuthPage = () => {
       password: "",
     },
     onSubmit: (values) => {
-      console.log("on submit", values);
+      // console.log("on submit", values);
     },
     validationSchema,
     validateOnMount: true,
