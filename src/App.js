@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import Layout from "./layout/layout";
 // import "./Webfonts/style.css"
-import "./Webfonts/fontiran.css";
+// import "./Webfonts/fontiran.css";
+
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const App = () => {
