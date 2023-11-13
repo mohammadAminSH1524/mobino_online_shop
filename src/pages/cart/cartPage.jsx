@@ -39,6 +39,7 @@ const CartPage = () => {
   }, []);
 
   const dispatch = useDispatch();
+  
   useEffect(() => {
     dispatch(getAsyncProducts());
   }, []);
@@ -90,18 +91,7 @@ const CartPage = () => {
             </span>
           </div>
           <div className={styles.cross}></div>
-          <button
-            onClick={() => dispatch(addToCart(2))}
-            className={styles.test}
-          >
-            add1
-          </button>
-          <button
-            onClick={() => dispatch(addToCart(2))}
-            className={styles.test1}
-          >
-            add2
-          </button>
+          
         </section>
         {/* cart body */}
         <section className={styles.cartBody}>

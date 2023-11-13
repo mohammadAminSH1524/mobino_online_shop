@@ -60,7 +60,7 @@ const HomePage = () => {
     },
   ];
 
-  const { products } = useSelector((state) => state.sort);
+  const { products  } = useSelector((state) => state.sort);
 
   const BestSellingProducts = bestsellingSortedProducts(products).slice(0, 12);
   const econemicProducts = sortedEconemicProducts(products).slice(0, 5);

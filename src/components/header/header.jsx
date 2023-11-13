@@ -17,25 +17,18 @@ const Header = () => {
   const [menuModal, setMenuModal] = useState(false);
   const { cart } = useSelector((state) => state.sort);
   let path = useLocation().pathname.split("/")[1];
-  
-  
 
   return (
     <header
       style={path === "auth" ? { display: "none" } : { display: "flex" }}
       className={styles.container}
     >
-     
-
       <div className={styles.containerControll}>
         <div className={styles.logoAndSearchbarContainer}>
           <Link to="" className={styles.title}>
             mobino
           </Link>
-          <div
-            
-            className={styles.searchBoxContainer}
-          >
+          <div className={styles.searchBoxContainer}>
             <input
               className={styles.searchInput}
               placeholder="نام کالای مورد نظر را تایپ کنید ..."
@@ -107,7 +100,7 @@ const Header = () => {
           <div className={styles.menuContainer}>
             <section className={styles.modalBtns}>
               <h4>
-                <Link onClick={() => setMenuModal(false)} to="/test">
+                <Link onClick={() => setMenuModal(false)} to="">
                   موبینو
                 </Link>
               </h4>

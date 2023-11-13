@@ -18,7 +18,10 @@ import { json } from "react-router-dom";
 //   }
 // );
 
-export const getAsyncProducts = createAsyncThunk("getAllProducts",  () => {
+export const getAsyncProducts = createAsyncThunk("getAllProducts", () => {
+  // return axios
+  //   .get("http://localhost:3001/products")
+  //   .then((Response) => Response.data);
   return axios.get("https://database.iran.liara.run/products").then(Response => Response.data)
 });
 
@@ -80,7 +83,7 @@ export const sortSlice = createSlice({
           const filteredProducts = state.products.filter((product) => {
             return product.quantity > 0;
           });
-          console.log("dsa");
+          // console.log("dsa");
 
           return {
             ...state,
@@ -256,6 +259,8 @@ export const sortSlice = createSlice({
       const findedProduct = state.products.find(
         (product) => product.id === payloadId
       );
+
+      // this if statement means if the item doesnt exist in cart
       if (index < 0) {
         toast("به سبد خرید اضافه شد", {
           position: "top-right",
@@ -318,7 +323,7 @@ export const sortSlice = createSlice({
       const findedProduct = state.cart.find(
         (product) => product.id === payloadId
       );
-      console.log("delete and decreament cart item");
+      // console.log("delete and decreament cart item");
 
       if (selectedProduct.cartQuantity > 1) {
         selectedProduct.cartQuantity--;
@@ -344,7 +349,7 @@ export const sortSlice = createSlice({
     },
 
     deleteAllCartItems: (state, action) => {
-      console.log("delete all");
+      // console.log("delete all");
       return {
         ...state,
         cart: [],

@@ -35,10 +35,13 @@ const AuthPage = () => {
 
   return (
     <div className={styles.container}>
+      
       <div className={styles.backgroundColors}>
         <div className={styles.whiteContainer}></div>
         <div className={styles.coloredContainer}></div>
       </div>
+
+
       <div className={styles.containerControll}>
         <Link to="/" className={styles.mobino}>
           موبینو
